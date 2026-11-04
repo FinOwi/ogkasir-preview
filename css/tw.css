@@ -1,0 +1,20 @@
+/* Tailwind CSS v4 — utility layer untuk OGKasir.
+   Preflight SENGAJA dimatikan: style existing (style.css) tetap jadi dasar,
+   Tailwind hanya menambah utility classes (bg-brand, text-brand, dsb).
+   File ini di-compile ke tailwind.css oleh ~/workspace/tools/tailwindcss
+   via preview-push.sh / build.sh — jangan edit tailwind.css manual. */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+@source "../index.html";
+@source "../js/*.js";
+
+@theme {
+  --color-brand: #c07f26;
+  --color-brand-dark: #9a6415;
+  --color-brand-light: #e8a83e;
+  --color-cream: #f5f3ee;
+  --color-ink: #232323;
+  --color-paper: #fffdf8;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
